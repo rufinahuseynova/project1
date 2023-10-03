@@ -1,0 +1,447 @@
+body{
+    /*font-family: Mulish;*/
+font-family: 'Mulish', sans-serif;
+    line-height: 1.7rem;
+    font-weight: 300;
+    font-size: 1rem;
+    color: gray;
+}
+header{
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 7rem;
+    align-items: center;
+    position:absolute;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul.menu{
+    display: flex;
+}
+ul.menu li a{
+    padding:5px 20px;
+    position: relative;
+}
+ul.menu li .menu-active::after{
+    content:"";
+    position: absolute;
+    height: 2px;
+    bottom: -4px;
+    left: 20px;
+    right:20px;
+    background-color:white;
+  }
+.logo a{
+    font-weight: 900;
+    font-size: 1.3rem;
+    font-family: 'Mulish', sans-serif;
+}
+.btn{
+    padding: 14px 20px;
+    font-size: 0.7rem;
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    background-color: #7971ea;
+    border: 1px solid #7971ea;
+    border-radius: 30px;
+    transition: .3 all ease;
+}
+.btn:hover{
+    background-color: #4f45e3;
+    border-color: #4f45e3;
+}
+.btn-beeg{
+    padding: 1rem 3rem;
+    font-size: 12px;
+}
+#intro{
+background:url(../photos/hero_1.jpg\ \(1\).webp);
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+background-attachment: fixed;
+}
+.h{
+    height: 100vh;
+    min-height: 900px;
+}
+#intro::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #343a40;
+    opacity: .9;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position:relative;
+}
+#intro h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+#intro p{
+    margin-bottom: 1.5rem;
+    font-size:1.1rem ;
+    color:gray ;
+}
+.intro-form{
+    background-color: white;
+    padding: 40px;
+    border-radius:7px ;
+}
+.form-control{
+    margin-bottom: 1rem;
+    display: block;
+}
+.intro-form h3{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.form-control {
+    height: 48px;
+    width: 100%;
+    padding:0.375rem 0.75rem;
+    color: #495057;
+    border:1px solid #ced4da ;
+    background-color:white;
+    font-size:1rem;
+    line-height:1.5; 
+    border-radius:0.25rem;
+    transition: 0.15s;
+}
+.form-control:hover{
+    border-color: #7971ea;
+}
+
+
+#courses{
+    padding: 5rem 0;
+}
+.course-item-header{
+    position: relative;
+}
+
+#courses .btn {
+    border-radius:0.25rem;
+    margin: 5px;
+}
+#courses h2{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 4rem;
+    color: white;
+}
+.course-item{
+    box-shadow: 0 2px 22px -1px rgba(0, 0, 0, 0.3);
+    position: relative;
+    bottom: 0;
+}
+.course-item:hover{
+    box-shadow: 0 2px 22px -1px rgba(0, 0, 0, 0.3);
+    transition: .3s;;
+    bottom: 10px;
+}
+#courses::before{
+    content: "";
+    width: 100%;
+    height: 20rem;
+    background-color: #7971ea;
+    position: absolute;
+    top: 0;
+}
+.course-item .price{
+    background-color: #7971ea;
+    padding: 10px 15px;
+    border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    color:white;
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+}
+.c-item-main{
+    padding: 35px 1.5rem 1.5rem;
+}
+.course-date{
+    font-size: .9rem;
+    margin-bottom: .9rem;
+}
+.c-date span:first-child{
+    font-size: 14px;
+    margin-right: 0.4rem;
+}
+.course-item h3 a{
+    color: #7971ea;
+    margin-bottom: 0.5rem;
+    font-size: 1.15rem;
+    display: inline-block;
+}
+.course-item .c-item-main p{
+    margin-bottom: 1rem;
+}
+.c-item-footer div{
+    border-top: 1px solid #edf0f5;
+    border-right:0.5px solid #edf0f5;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.c-item-footer div span:first-child{
+    margin-right: 4px;
+    font-size: 19px;
+}
+.footer{
+    padding-top: 3rem;
+}
+
+
+/*sonrasi ozum*/
+
+.our-programs h4{
+    margin-bottom: 1.8rem;
+    font-weight: 900 !important;
+    color: black;
+    font-size: 3rem;
+}
+.our-programs .ourps  p{
+    margin:auto 250px 1.5rem;
+
+}
+.our-programs span{
+    margin-right: 15px;
+   }
+.our-programs .col-5 h2,p{
+    margin-bottom: 1.5rem;
+}
+.our-programs .box{
+    width: 350px;
+    margin-left: 60px;
+}
+.our-programs .logo{
+    color: #7971ea;
+}
+.our-programs .row{
+    margin-bottom: 6.5rem;
+    }
+ .our-programs .row:nth-child(even){
+        order: 2;
+    }
+
+
+/*our teachers*/
+.teachers .heading h4{
+    font-size: 3rem;
+    color: #000;
+    margin-bottom: 1.8rem;
+    font-weight: 900;
+}
+.teachers .heading p{
+    margin:auto 250px 5rem;
+}
+.teachers .col-4{
+    border: 1px solid #e9ecef;
+    padding: 50px;
+    height: 330px;
+    margin-bottom: 150px;
+    margin-right: 20px;
+}
+.teachers .col-4 img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 130px;
+}
+.teachers .box{
+    position: relative;
+    bottom: 100px;
+}
+.teachers .box h3,h4{
+    margin-bottom: 15px;
+}
+/*its over*/
+
+
+/*jerome jensen section*/
+.jj img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-top: 70px; 
+}
+.jj img,h2{
+    margin-bottom: 1.5rem;
+}
+.jj p{
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#jerome{
+    background:url(../photos/hero_1.jpg\ \(1\).webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    height: 500px;
+}
+#jerome::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .7;
+}
+.jj {
+     position:relative;
+     color: white;
+}
+/*bitti*/
+
+/*why choose us*/
+#why{
+   position:relative;
+    height: 800px;
+}
+#why img{
+    width: 500px;
+    height: 500px;
+}
+.no1{
+position: absolute;
+    top: 0;
+    right:0;
+}
+.no2{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+#why h2{
+    font-size: 3rem;
+    color: #000;
+    margin-bottom: 1.8rem;
+    margin-top: 80px;
+    font-weight: 900;
+}
+#why span{
+    color: #7971ea;
+    margin-right: 3px;
+    margin-bottom: 30px;
+}
+#why ul{
+    border: 1px solid lightgray;
+    padding: 20px;
+    width: 370px;
+    box-shadow: 2px 0px 3px gray;
+    background-color: white;
+    height: 350px;
+    margin-right: 20px;
+}
+#why div{
+    position: relative;
+    top: 63px;
+}
+#why div img{
+    width: 650px;
+    height: 650px;
+}
+
+/*message us*/
+.message-us{
+    width: 100%;
+    background-color: #edf0f5;
+    margin-bottom: 150px;
+}
+.message-us div{
+    width: 45%;
+}
+.message-us h2{
+    font-size: 3rem;
+    color: #000;
+    margin-bottom: 1.2rem;
+    margin-top: 50px;
+    font-weight: 900;}
+.message-us input{
+        height: 50px;
+        font-size: 1rem;
+        border: 1px solid #edf0f5;
+        border-radius: 5%;
+        margin-bottom: 14px;
+        
+}
+.fn,.ln{
+    width: 48%;
+}
+.inputs{
+    width: 100%;
+}
+textarea{
+    width: 100%;
+    display: block;
+        font-size: 1rem;
+        border: 1px solid #edf0f5;
+        margin-bottom: 20px;
+    }
+.message-us .btn{
+    height: 45px;
+    margin-bottom: 90px;
+    font-size: 1rem;
+}
+
+
+/*footer*/
+footer{
+    height: 300px;
+}
+footer h3{
+    color: #000;
+    font-size: medium;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+footer p{
+    font-weight: 200;
+}
+footer a{
+    color: #7971ea;
+}
+footer .btn{
+    border-radius: 0;
+    height: 45px;
+    font-size: medium;
+}
+footer input{
+    height: 45px;
+}
+footer input:hover{
+    border:1px solid #7971ea
+}
+.xett{
+    margin: auto;
+    width: 74%;
+    height: 1px;
+    background-color: lightgray;
+    margin-bottom: 70px;
+}
+.cpyrt{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 150px;
+}
